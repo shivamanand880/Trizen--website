@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://trizen.co.in/sitemap.xml
