@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vision & Mission — Trizen</title>
+  <meta name="description" content="Learn about Trizen's vision and mission to empower startups with BPO services and digital solutions." />
+  <link rel="icon" href="trizen-logo.jpeg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" aria-label="Trizen home">
+        <img src="trizen-logo.jpeg" alt="Trizen Logo" class="logo-img">
+        <span class="logo-text">TRIZEN</span>
+      </a>
+      <nav class="menu" id="menu" role="navigation" aria-label="Primary">
+        <a href="services.html">Services</a>
+        <a href="vision.html">Vision</a>
+        <a href="team.html">Team</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="vision-section" style="padding-top: 120px;">
+      <div class="container vision-inner">
+        <div class="vision-left">
+          <h2>Empowering Startups to Grow</h2>
+          <p class="muted">
+            At <strong>Trizen</strong>, we believe every startup deserves a strong foundation — from customer service to digital presence.
+            Our mission is to help new businesses scale with confidence, technology, and the right guidance.
+          </p>
+
+          <div class="vision-cards">
+            <div class="vision-card">
+              <h3>Our Vision</h3>
+              <p>
+                To become the most trusted growth partner for startups — empowering them with reliable customer support, result-driven digital marketing, and impactful web design solutions.
+              </p>
+            </div>
+
+            <div class="vision-card">
+              <h3>Our Mission</h3>
+              <p>
+                Helping startups move from idea to impact by providing end-to-end digital support — from brand identity to customer engagement. 
+                We aim to simplify growth for small teams and make them ready for the global stage.
+              </p>
+            </div>
+
+            <div class="vision-card">
+              <h3>How We Help</h3>
+              <ul class="values-list">
+                <li><strong>Customer Support Setup</strong> — Build your first 24x7 CX team.</li>
+                <li><strong>Digital Presence</strong> — Get noticed through strategic marketing & branding.</li>
+                <li><strong>Tech Integration</strong> — Web automation & analytics to scale faster.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="vision-cta">
+            <a class="btn primary" href="contact.html">Partner With Us</a>
+            <a class="btn ghost" href="services.html">Our Services</a>
+          </div>
+        </div>
+
+        <div class="vision-right">
+          <img src="ibertola-2681319.jpg" alt="Trizen Startup Support" class="vision-illustration" onerror="this.style.display='none'">
+          <figcaption class="muted small">Empowering startups with digital tools, support & growth strategy</figcaption>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="trizen-logo.jpeg" alt="Trizen Logo">
+            <span class="footer-logo-text">TRIZEN</span>
+          </div>
+          <p>Your trusted BPO partner for professional voice support, email handling, and back office operations. Empowering startups to grow with confidence.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/company/trizen.co.in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">🔗 LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="vision.html">Vision & Mission</a>
+          <a href="team.html">Our Team</a>
+          <a href="blog.html">Blog</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <p><strong>Email:</strong> connect@trizen.co.in</p>
+          <p><strong>Phone:</strong> +91 7347206901</p>
+          <p><strong>Address:</strong> Panchkula, India</p>
+          <p style="margin-top: 16px;"><strong>Business Hours:</strong><br>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Get in Touch</h3>
+          <form action="https://formsubmit.co/connect@trizen.co.in" method="POST" class="footer-contact-form" target="_blank">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+            <textarea name="message" placeholder="Your message" rows="3" required></textarea>
+            <input type="hidden" name="_subject" value="New message from Trizen website">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-inner">
+          <div>© 2024 Trizen — All rights reserved</div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
+

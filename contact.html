@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us — Trizen</title>
+  <meta name="description" content="Get in touch with Trizen for BPO services consultation and support." />
+  <link rel="icon" href="trizen-logo.jpeg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" role="banner">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" aria-label="Trizen home">
+        <img src="trizen-logo.jpeg" alt="Trizen Logo" class="logo-img">
+        <span class="logo-text">TRIZEN</span>
+      </a>
+      <nav class="menu" id="menu" role="navigation" aria-label="Primary">
+        <a href="services.html">Services</a>
+        <a href="vision.html">Vision</a>
+        <a href="team.html">Team</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact" style="padding-top: 120px;">
+      <div class="container contact-inner">
+        <div class="contact-left">
+          <h2>Get in touch</h2>
+          <p class="muted">Send details and we'll get back within 24 hours.</p>
+          <form action="https://formsubmit.co/connect@trizen.co.in" method="POST" class="contact-form" target="_blank">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+            <input type="text" name="company" placeholder="Company (optional)">
+            <textarea name="message" placeholder="Tell us about your project" rows="5" required></textarea>
+
+            <!-- Hidden fields -->
+            <input type="hidden" name="_subject" value="New message from Trizen website">
+            <input type="hidden" name="_next" value="https://shivamanand880.github.io/Trizen/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-right">
+          <h3>Contact Info</h3>
+          <p><strong>Email:</strong> connect@trizen.co.in</p>
+          <p><strong>Phone:</strong> +91 7347206901</p>
+          <p><strong>Address:</strong> Panchkula, India</p>
+          <div class="socials">
+            <a href="https://www.linkedin.com/company/trizen.co.in/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="trizen-logo.jpeg" alt="Trizen Logo">
+            <span class="footer-logo-text">TRIZEN</span>
+          </div>
+          <p>Your trusted BPO partner for professional voice support, email handling, and back office operations. Empowering startups to grow with confidence.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/company/trizen.co.in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">🔗 LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="vision.html">Vision & Mission</a>
+          <a href="team.html">Our Team</a>
+          <a href="blog.html">Blog</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <p><strong>Email:</strong> connect@trizen.co.in</p>
+          <p><strong>Phone:</strong> +91 7347206901</p>
+          <p><strong>Address:</strong> Panchkula, India</p>
+          <p style="margin-top: 16px;"><strong>Business Hours:</strong><br>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Get in Touch</h3>
+          <form action="https://formsubmit.co/connect@trizen.co.in" method="POST" class="footer-contact-form" target="_blank">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email address" required>
+            <textarea name="message" placeholder="Your message" rows="3" required></textarea>
+            <input type="hidden" name="_subject" value="New message from Trizen website">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-inner">
+          <div>© 2024 Trizen — All rights reserved</div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    hamburger.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
+
